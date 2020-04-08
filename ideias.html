@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-ideas">
+    <div id="container">
+        <header>
+                 <a href="index.html" class="fat">
+                <img src="logo.png" alt="imagem da logo marca">
+                </a>
+         
+          
+            <nav>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#" onclick=onOff()>Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+    
+        </section>
+        
+        <main>
+            <section id="ideas">
+    
+                <div class="idea"> 
+                   <img 
+                       src="coding.png" 
+                       alt="Imagen de curso de programação">
+                   <div class="content">
+                       <h3> Cursos de Programação</h3>
+                       <p>Estudo</p>
+                       <div class="description">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde eaque in repellendus, sapiente quaerat ullam quia, est asperiores aliquam doloremque saepe earum eum sequi quis soluta officiis quidem corrupti?
+                       </div>
+                       <a class="a_ideia" href="#">Ir para a Ideia</a>
+                   </div>
+       
+               </div>
+               <div class="idea"> 
+                   <img 
+                       src="sport.png" 
+                       alt="Imagen de curso de excercício">
+                   <div class="content">
+                       <h3> Excercício</h3>
+                       <p>Saúde</p>
+                       <div class="description">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde eaque in repellendus, sapiente quaerat ullam quia, est asperiores aliquam doloremque saepe earum eum sequi quis soluta officiis quidem corrupti?
+                       </div>
+                       <a class="a_ideia" href="#">Ir para a Ideia</a>
+                   </div>
+       
+               </div>
+               <div class="idea"> 
+                   <img 
+                       src="coding.png" 
+                       alt="Imagen de curso de meditação">
+                   <div class="content">
+                       <h3>Meditação</h3>
+                       <p>Lazer</p>
+                       <div class="description">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde eaque in repellendus, sapiente quaerat ullam quia, est asperiores aliquam doloremque saepe earum eum sequi quis soluta officiis quidem corrupti?
+                       </div>
+                       <a class="a_ideia" href="#">Ir para a Ideia</a>
+                   </div>
+       
+               </div>
+                <div class="idea"> 
+                   <img 
+                       src="mascara.png" 
+                       alt="Imagen de curso de mascara">
+                   <div class="content">
+                       <h3> Como usar Máscara</h3>
+                       <p>Saúde</p>
+                       <div class="description">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde eaque in repellendus, sapiente quaerat ullam quia, est asperiores aliquam doloremque saepe earum eum sequi quis soluta officiis quidem corrupti?
+                       </div>
+                       <a class="a_ideia" href="#">Ir para a Ideia</a>
+                   </div>
+       
+               </div>
+                   
+               </section>
+        </main>
+        <footer>
+        
+            <p id="footer">Com 💝 <a class="a_fuhr" href="https://www.instagram.com/fuhr_br/" target="_blank"> <strong>Fuhr</strong></a></a></p>
+    
+        </footer>
+    </div>
+
+<div id="modal" class="hide">
+    <div class="content">
+        
+    <h1>Nova Ideia</h1>
+    <form action="">
+        <div class="input-wrapper">
+            <label for="tittle">Título da Ideia</label>
+            <input type="text" name="tittle">
+        </div>
+        <div class="input-wapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="categpry">
+        </div>
+
+        <div class="input-wapper">
+            <label for="image">linck da Imagem</label>
+            <input type="url" name="image">
+        </div>
+
+        <div class="input-wapper">
+            <label for="description">Descrição</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wapper">
+            <label for="link">Link da ideia</label>
+            <input type="url" name="link">
+    
+        </div>
+    
+        <a id="a_form" href="" onclick="onOff()">Voltar</a>
+
+        <button id="form_button">Salvar</button>
+      </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
