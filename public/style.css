@@ -1,0 +1,316 @@
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    background: #d3ccce;
+    color: black;
+    margin: 0;
+
+}
+body.hideScroll{
+    overflow:hidden;/*Tira as barras de rolagens*/
+}
+
+body #container{
+    width: 90%;/*irá pegar só 90% da página, dando mais espaço na página quando a página for encolhida pelo usuário*/
+    max-width: 980px; /*Tamanho máximo que poderá ter o box container*/
+   margin:40px auto;
+    display: flex; /* pega em todos os filhos */
+}
+a{
+    text-decoration: none;
+
+}
+.a_ideia{
+    color:#ff5e84 ;
+
+}
+
+a:hover{
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p, description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+#intro{
+    width: 300;
+    margin-right: 20;
+   padding: 20px;
+}
+
+main{
+    margin: 32px 0;/*Pode se usar até quatro parãmetros no comando "margin", sendo que cada um vai ser referência de uma margemneste caso 32=superior/inferior 0=lados */
+
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;/*"space-evenly">Cria um espaço entre os botões que estão na mesma linha*/
+    margin-bottom: 32px;
+}
+
+button{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0,2px;
+    border:none;
+    background: #ff5e84;
+    color:white;
+    font-weight:bold ;
+    cursor: pointer;
+    outline: none;
+    border-radius: 60px 0;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0px 8px 16px #ff5e8480;/*Adiciona borda, sendo o 80 no fim da cor, a quantidade de sombra*/
+    
+}
+
+button:hover{
+    text-decoration:underline;
+    /*Coloca uma propriedade no votão, uma linha ao colocar o mouse em cima*/
+
+}
+
+footer a{
+    color: #25282B;
+   
+}
+
+footer{
+    text-align: center;
+    
+}
+.idea{
+    display: flex;
+    margin-bottom: 32px;
+    background-color: #FFF;
+    border-radius: 8px ;
+    padding: 32px;
+    box-shadow: 0 4px 16x -8px rgba(1, 1, 1, 0.1) ;
+}
+.idea img{
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+  
+
+
+}
+.idea h3{
+margin: 0;
+}
+.idea p{
+    margin:8px 0;
+    color: #777;
+}
+.ideia .description{
+    margin:16px 0;
+}
+
+#modal{
+    background:#ff5e84 ;
+    
+    position: fixed;/*fixa em toda a página,ocupa toda a tela*/
+
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    
+
+   display: flex;
+   justify-content: center;
+
+   transition:400ms;
+   
+}
+#modal.addScroll{
+    overflow:auto;/*Adiciona o scroll do mouse*/
+}
+
+#modal .content{
+    color: white;
+    margin-top: 5%;
+}
+#modal .content h1{
+    text-align:center;
+    text-transform: uppercase;/*deixa tudop em letra maiuscúla*/
+   
+}
+#modal form{ 
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto 15%;
+
+    display: grid;/*Cria colunas cada 1fr é uma coluna*/
+    grid-template-columns:1fr 1fr ;
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column:span 2;
+    /*espande até a segunda coluna do grid*/
+}
+
+form input, 
+form textarea{
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    outline: none;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+form label{
+font-weight: 600px;
+line-height: 32px;
+letter-spacing: 0.8px;
+}
+
+form #a_form{
+    width: 150px;
+    height: 40px;
+
+    background-color:#ffffff22;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+
+    align-self: end;
+    transition: 400ms;
+
+}
+form #a_form:hover{/*quando mouse passar por cima*/
+    background:#fff ;
+    color:#ff5e84 ;
+    text-decoration: none;
+}
+
+form #form_button{
+    background: white;
+    border-radius: 6px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    color: blue;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self:end;
+    transition: 400ms;
+}
+form #form_button:hover{/*quando o mouse estiver em cima do botão*/
+    color: white;
+    background-color: #0984e3;
+    text-decoration: none;
+}
+#modal.hide{
+
+opacity: 0;
+visibility: hidden;
+  
+}
+
+/*Idea.html*/
+
+#page-ideas #container{
+    display:block; /*bloquia o display flex na div container*/
+ 
+}
+#page-ideas header{
+    display: flex; /* deixa um elemento ao lado do outro os filhos de header irão herdar isso tmb*/
+    justify-content: space-between; /*Da espaço entre caixas*/
+
+}
+#page-ideas nav{
+    display:flex;
+    align-items:center;
+
+}
+#page-ideas nav li{
+    list-style-type:none;
+    margin-right:16px;
+    
+}
+
+#page-ideas nav li a{
+    color:#ff5E84;
+    font-size:20px;
+}
+
+#page-ideas nav li:last-child{
+    margin:0;
+
+}
+
+#page-ideas nav li:last-child a{
+    width:150px;
+    height:40px;
+
+    background-color:#ff5E84;
+    color:white;
+
+    font-size:14px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+     border-radius:60px 0px;
+
+}
+
+#page-ideas nav li:last-child a:hover{
+    background-color:#0984e3;
+    text-decoration:none;
+
+}
+section#title{
+    text-align:center;
+}
+
+section#title p{
+    opacity:0.7;
+    margin:0;
+}
+
+section#title h1{
+    margin:0;
+    font-size:28px
+}
+
+#section#ideas{
+display:grid;/*Habilita o grid para poder criar as colunas*/
+grid-tamplate-column:1fr 1fr;/*Cria duas colunas*/
+
+
+gap:20px;/*Distancia entre colunas do grid*/
+
+}
+
+section#title,
+section#ideas,
+footer{
+        margin-top:64px 0;
+}

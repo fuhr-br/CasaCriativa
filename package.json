@@ -1,0 +1,26 @@
+{
+  "name": "CasaCriativa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuhr-br/CasaCriativa.git"
+  },
+  "keywords": [],
+  "author": "Anderson Fuhr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuhr-br/CasaCriativa/issues"
+  },
+  "homepage": "https://github.com/fuhr-br/CasaCriativa#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "nunjucks": "^3.2.1"
+  }
+}

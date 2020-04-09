@@ -1,0 +1,56 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+
+    <header>
+     <a href="/" class="fat">
+        <img src="/logo.png" alt="imagem da logo marca">
+        </a>
+       
+    </header>
+    <main>
+        
+        <p>
+            Ficar em casa em peridos longos, não deve ser nada fácil.
+        </p>
+    
+        <p> 
+            Por isso, iremos catalogar <strong>ideias, brincadeiras, jogos,
+            filmes, livros, cursos, dicas</strong> e tudo que for 
+            necessário para tornar esse momento 
+            mais interessante.
+        </p>
+    
+        <p>
+           Comece clicando em ver ideias para ver as cadastradas e contribua adicionando a sua ideia.
+        </p>
+
+    </main>
+    <section id="buttons">
+        
+        <button onclick="onOff()">+Adicionar Ideia</button>
+        
+        <a href="/ideias" class="fat">
+        <button class="fat">Ver Ideias</button>
+        </a>
+
+    </section>
+
+    <footer>
+
+        <p id="footer">Com 💝 <a class="a_fuhr" href="https://www.instagram.com/fuhr_br/" target="_blank"> <strong>Fuhr</strong></a></a></p>
+
+    </footer>
+
+</section>
+
+<section id="last-ideas">
+
+{%include "all_ideas.html"%}
+
+</section>
+
+{% endblock %}
